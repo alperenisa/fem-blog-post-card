@@ -1,0 +1,9 @@
+@import url(reset.css);
+@import url(global.css);
+@import url(../fonts/figtree.css);
+
+@import url(utitiles/colors.css);
+@import url(utitiles/layout.css);
+
+@import url(components/Post.css);
+@import url(components/Footer.css);

@@ -1,0 +1,103 @@
+:root {
+  --Post-backgroundColor: var(--colorWhite);
+  --Post-color: var(--colorBlack);
+  --Post-borderColor: var(--colorBlack);
+  
+  --Post-margin: 2em;
+  --Post-padding: 1.5em;
+  --Post-borderRadius: 1.2em;
+  --Post-gap: 1em;
+
+  --Post-boldWeight: 800;
+
+  --Post-imageWrapper-borderRadius: 1em;
+
+  --Post-tag-backgroundColor: var(--colorYellow);
+  --Post-tag-gap: .5em;
+  --Post-tag-fontSize: .9em;
+
+  --Post-summary-color: var(--colorGrey);
+
+  --Post-author-gap: .5em;
+}
+
+.Post {
+  background-color: var(--Post-backgroundColor);
+  color: var(--Post-color);
+  box-sizing: border-box;
+  max-width: 25em;
+
+  margin: var(--Post-margin);
+  padding: var(--Post-padding);
+  
+  border: 1px solid var(--Post-borderColor);
+  border-radius: var(--Post-borderRadius);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--Post-gap);
+
+  box-shadow: .5em .5em 0 0 var(--Post-borderColor);
+  transition: 200ms ease;
+
+  cursor: pointer;
+}
+
+.Post:hover, .Post:focus {
+  box-shadow: 1em 1em 0 0 var(--Post-borderColor);
+  transform: translateX(-.5em) translateY(-.5em);
+}
+
+  .Post-imageWrapper {
+    border-radius: var(--Post-imageWrapper-borderRadius);
+    overflow: hidden;
+  }
+
+    .Post-imageWrapper > img { width: 100%; }
+
+  .Post-tags {
+    display: flex;
+    gap: var(--Post-tag-gap);
+    /* 1em from the main gap + this = 2em */
+    padding-top: var(--Post-gap);
+  }
+
+  .Post-tag {
+    background: var(--Post-tag-backgroundColor);
+    padding: .7em;
+    font-size: var(--Post-tag-fontSize);
+    font-weight: var(--Post-boldWeight);
+    line-height: 1em;
+    border-radius: .5em;
+  }
+
+  .Post-title {
+    line-height: 1.2em;
+    font-weight: var(--Post-boldWeight);
+    transition: 200ms ease;
+  }
+
+  .Post:hover .Post-title,
+  .Post:focus .Post-title {
+    color: var(--colorYellow);
+  }
+
+  .Post-summary {
+    color: var(--Post-summary-color)
+  }
+
+  .Post-author {
+    display: flex;
+    align-items: center;
+    gap: var(--Post-author-gap);
+  }
+
+  .Post-author-avatar {
+    border-radius: 999999em;
+    overflow: hidden;
+    max-width: 2em;
+  }
+
+  .Post-author-name {
+    font-weight: 800;
+  }

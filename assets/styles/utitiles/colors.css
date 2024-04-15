@@ -1,0 +1,6 @@
+:root {
+  --colorWhite:   hsl(0, 0%, 100%);
+  --colorGrey:     hsl(0, 0%, 50%);
+  --colorBlack:     hsl(0, 0%, 7%);
+  --colorYellow: hsl(47, 88%, 63%);
+}
