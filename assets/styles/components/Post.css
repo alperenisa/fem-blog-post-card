@@ -58,8 +58,6 @@
   .Post-tags {
     display: flex;
     gap: var(--Post-tag-gap);
-    /* 1em from the main gap + this = 2em */
-    padding-top: var(--Post-gap);
   }
 
   .Post-tag {

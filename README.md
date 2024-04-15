@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [TODO: Update URL](https://www.frontendmentor.io/challenges/blog-preview-card-ckPaj01IcS/)
+- Solution URL: [View on Frontend Mentor](https://www.frontendmentor.io/solutions/blog-preview-card-wGEM0Zai7Z)
 - Live Site URL: [GitHub Pages](https://alperenisa.github.io/fem-blog-post-card)
 
 ## My process
